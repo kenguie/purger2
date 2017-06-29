@@ -1,4 +1,4 @@
-# purger2
+# Fastly Purge using an api key
 Fastly
 
 This is a basic url purger that prompts you for the url you want to purge on fastly.
