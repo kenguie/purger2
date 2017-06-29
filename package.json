@@ -1,7 +1,7 @@
 {
     "name": "fastly-purge-api-w-prompt",
     "version": "1.0.3",
-    "description": "purger",
+    "description": "Purge files in Fastly",
     "main": "fastlyPurge.js",
     "scripts": {
         "test": "node fastlyPurge"
