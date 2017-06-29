@@ -1,13 +1,17 @@
-var FastlyPurge = require("fastly-purge");
+require('./getUrl').start(function(purge) {
+  console.log(`url requested: ${purge}`);
 
-var FAKE_API_KEY = 'wadus';
+  var FastlyPurge = require("fastly-purge");
 
-var FAKE_PURGE_URL = 'http://example.com/image.jpg';
+  var API_KEY = 'API_KEY';
 
-var fastlyPurge = new FastlyPurge(FAKE_API_KEY);
+  var PURGE_URL = purge;
 
-fastlyPurge.url(FAKE_PURGE_URL, callback);
+  var fastlyPurge = new FastlyPurge(API_KEY);
 
-function callback(err, result) {
-    console.log(err, result);
-}
+  fastlyPurge.url(PURGE_URL, callback);
+
+  function callback(err, result) {
+      console.log(err, result);
+  }
+});

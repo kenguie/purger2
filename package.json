@@ -1,0 +1,27 @@
+{
+  "name": "fastly-api",
+  "version": "1.0.0",
+  "description": "purger",
+  "main": "fastlyPurge.js",
+  "scripts": {
+    "test": "node fastlyPurge"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenguie/purger2.git"
+  },
+  "keywords": [
+    "fastly",
+    "purge"
+  ],
+  "author": "Kenrick Guie <kg@kenguie.com> (http://kenguie.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenguie/purger2/issues"
+  },
+  "homepage": "https://github.com/kenguie/purger2#readme",
+  "dependencies": {
+    "fastly-purge": "^1.0.1",
+    "prompt": "^1.0.0"
+  }
+}
